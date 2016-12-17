@@ -1,0 +1,2 @@
+INPUT I
+PRINT I

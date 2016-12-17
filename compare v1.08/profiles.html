@@ -1,0 +1,330 @@
+<!-- Design & Programming by Sergey Belyaev, @2006-2014 E-mail: bsn@mail.ru -->
+<html>
+<head>
+  <title>Арыстан Калимов</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <meta name="description" content="Олимпиады по информатике. Новости, задачи, решения. Автоматическая система проверки.">
+  <meta name="keywords" content="программирование, задачи по программированию, разбор задач, проверяющая система, acm, асм">
+  <meta name='yandex-verification' content='469bed0cc8ac30a3' />
+  <meta name='yandex-verification' content='4750e2c69b4e997c' /> 
+  <meta name="google-site-verification" content="h6lljpq7I6H-uuuQLjC_oX_jLfDyQjsygVZup9Xyygs" />  
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"> 
+  <style>
+     a{color:#003c00;text-decoration:none;border-color:0}a:hover{color:red;text-decoration:underline}a.red{color:red;text-decoration:none;border-color:0}a.red:hover{color:red;text-decoration:underline}a.top:link{color:#000;font-weight:bold;font-family:verdana;font-size:11pt}a.top:visited{color:#000;font-weight:bold;font-family:verdana;font-size:11pt}a.top:hover{color:#e22;font-weight:bold;font-family:verdana;font-size:11pt}h1{margin-top:5;margin-bottom:5;text-align:center;font-family:verdana,tahoma,arial;font-size:14pt;color:#060;font-weight:normal}h2{font-family:verdana,tahoma,arial;font-size:14pt;color:#060;font-weight:normal}h3{margin-top:10;margin-bottom:-20;font-family:verdana,tahoma,arial;font-size:14pt;color:#060;font-weight:normal}h4{font-family:verdana,tahoma,arial;font-size:11pt;color:#060;font-weight:bold}hr{color:#509050;width:100%;height:1px}input{background-color:#f0fff0;border:gray 1px solid;font-family:verdana,tahoma;font-size:8pt}input.button{background-color:#eee;border:gray 1px solid;font-family:verdana,tahoma;font-size:8pt}select{background-color:#f0fff0;border:gray 1px solid;font-family:verdana,tahoma;font-size:8pt}textarea{background-color:#f0fff0;border:gray 1px solid;font-family:verdana,tahoma;font-size:8pt}.menu_title{font-family:Tahoma;font-size:12px;color:#0d2b01;FONT-WEIGHT:bold}.news{color:#060}.btext{text-align:center;font-family:verdana,tahoma,arial;font-size:8pt;color:#040;font-weight:bold}.btext2{text-align:left;font-family:verdana,tahoma,arial;font-size:8pt;color:#040;font-weight:bold}.btext3{font-family:verdana,tahoma,Arial;font-size:8pt;color:#007000}.menu{color:#33a033;font-size:11pt;text-decoration:none;font-weight:bold}.title{color:#007800;font-weight:bold}.nomargin{margin:0 0 0 0}p.text{text-indent:30px;text-align:justify;margin-top:5px;margin-bottom:10px}p.stext{text-indent:30px;font-size:10pt;text-align:justify;margin-top:5px;margin-bottom:10px}img.point{width:5px;height:12px;background-image:url(/images/1x1.gif)}.normal{background-color:#fff;border:0 solid gray;font-size:12px;font-family:Verdana,Tahoma}.red{color:red}.green{color:#080}.green2{color:#080}.gray{background-color:#ddd}.white{background-color:white}.white2{background-color:white;font-family:courier}table.main{background-color:#070;width:100%}th{background-color:#dfd;color:#060;font-size:12pt;text-decoration:none;font-weight:bold}tr.small{font-size:8pt}td.green{background-color:#9dbfb1}.img_topleft{border:0;background-image:url(/images/img_topleft.gif);background-repeat:no-repeat;width:13px;height:13px}.img_top{border:0;background-image:url(/images/img_top.gif);background-repeat:repeat-x;height:13px}.img_topright{border:0;background-image:url(/images/img_topright.gif);background-repeat:no-repeat;width:13px;height:13px}.img_left{border:0;background-image:url(/images/img_left.gif);background-repeat:repeat-y;width:13px}.img_right{border:0;background-image:url(/images/img_right.gif);background-repeat:repeat-y;width:13px}.img_bottomleft{border:0;background-image:url(/images/img_bottomleft.gif);background-repeat:no-repeat;width:13px;height:13px}.img_bottom{border:0;background-image:url(/images/img_bottom.gif);background-repeat:repeat-x;height:13px}.img_bottomright{border:0;background-image:url(/images/img_bottomright.gif);background-repeat:no-repeat;width:13px;height:13px}.img_bottomright_comment{border:0;background-image:url(/images/img_comment.gif);background-repeat:no-repeat;width:13px;height:13px}table.thumb{border-collapse:collapse;text-align:center;margin:10px;padding:0}a.my{color:#999;font-size:10;text-decoration:none}a.my:visited{color:#999;font-size:10;text-decoration:underline}a.my:hover{color:#666;font-size:10;text-decoration:underline}
+  </style>
+  <script>var now = new Date(2014,3-1,25,20,37,44)</script>
+
+<script>
+function ValidLF(){
+  if(!enter.lgn.value){
+    alert('Необходимо указать логин')
+    enter.lgn.focus()
+  }else 
+  if(!enter.password.value){
+    alert('Необходимо указать пароль')
+    enter.password.focus()
+  }
+  else {return true}
+  return false
+}
+function ShowTime(){ 
+  now.setTime(now.getTime()+1000)
+  timer.innerHTML =now.toLocaleString()+"&nbsp;"
+  window.setTimeout('ShowTime()',1000)
+} 
+</script>
+
+</head>
+
+<body onload="ShowTime()" class=nomargin>
+
+  <table width=100% cellpadding=0 cellspacing=0 style="margin-top: 2" border=0> 
+	<tr height=20><td colspan=5>
+	  <table width=100% cellpadding=0 cellspacing=0 border=0> 
+
+        <tr height=40>
+	      <td colspan=2>
+		    <table cellpadding=0 cellspacing=0><tr>
+		      <td valign=top>
+
+<script type="text/javascript"><!--
+new Image().src = "//counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random();//--></script>
+
+</td>
+		      <td><a href=/><img src=/images/title.png width=354 height=40 alt="Школа программиста" border=0></a></td>
+            </tr></table>
+		  </td>
+		  <td valign=top colspan=2 align=right>
+		     <p id=timer class=nomargin></p>
+			 
+			   <a href=/inc/remind.asp style="font-size: 8pt">Забыли пароль?</a>
+             
+		  </td>
+        </tr>
+
+        <tr height=5>
+		  <td background=/images/3lines.gif colspan=4></td>
+		</tr><tr height=20 valign=middle>
+           <td bgcolor=#aaFFaa width=430> <a href=/ class=top>[новости]</a>
+ <a href=/asp/gb.asp?id=-1 class=top>[гостевая]</a>
+ <a href=/asp/forum.asp class=top>[форум]</a>
+
+ <a href=http://chat.acmp.ru class=top target=_blank>[чат]</a>
+
+ <a href=/inc/register.asp class=top>[регистрация]</a>
+</td>
+           <td bgcolor=#609E48 width=20 background=/images/45a.gif></td>
+		   <td bgcolor=#609E48 align=center>
+		   
+		   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- acmp.ru, верхнее меню -->
+              <ins class="adsbygoogle"
+                 style="display:inline-block;width:468px;height:15px"
+                 data-ad-client="ca-pub-8694399840838901"
+                 data-ad-slot="8318534624"></ins>
+           <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+           </script>
+		   
+		   </td>
+           <td bgcolor=#609E48 width=300 align=right> 
+  <form class=nomargin name=enter action=/index.asp?main=enter&r=827511014279059133424023 method=post onsubmit='return ValidLF()'> 
+    <b class=btext2>
+	  Логин: <input type=text name=lgn value='' size=8 style="height:18">&nbsp;
+	  Пароль: <input type=password name=password value='' size=8 style="height:18">&nbsp;
+	  <input type=submit value=Ok class=button style="height:18">&nbsp;
+  </form>
+  <script defer>enter.lgn.focus()</script> 
+</td>
+		</tr>
+	  </table>
+    </td></tr>	
+	<tr height=8><td colspan=5 background=/images/line.gif><a href=/?main=back&showmenu=0><img src=/images/l_arr.gif border=0 width=15 height=7 alt="Скрыть меню"></a></td></tr>
+	<tr><td colspan=5>
+    <table width=100% cellspacing=0 cellpadding=0><tr height=100%>
+	  
+        <td width=180 valign=top height=100%>		<table width=100% height=100% cellpadding=0 cellspacing=0 valign=top>
+	    <tr height=1%><td>
+
+           
+		<table width="100%" height=100% border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr height=19>
+		    <td width=1></td>
+            <td width=12 background=/images/l_menu.gif bgcolor="#339933"><img src=/images/l_menu.gif width=12 height=19></td>
+            <td background="/images/s_menu.gif" align=center width=100%  bgcolor="#88ff88" class=menu_title
+			  			
+			>ИНФОРМАЦИЯ</td>
+            <td width=12 background=/images/r_menu.gif bgcolor="#339933"><img src=/images/r_menu.gif width=12 height=19></td>
+		    <td width=1></td>
+          </tr>
+          <tr valign="top" height=100% bgcolor="#f0fff0">
+		    <td></td>
+            <td colspan="3" background=/images/notepad.gif style="BORDER-BOTTOM: #306E18 1px dashed;  BORDER-left: #306E18 1px dashed;BORDER-right: #306E18 1px dashed; padding: 3" height=100%>
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=7>О школе</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=40207>Правила</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/asp/champ>Олимпиады</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/asp/albom/>Фотоальбом</a><br>
+
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=121>Архив олимпиад</a><br>
+           </td><td></td></tr><tr height=2><td colspan=5></td></tr></table>
+
+	    </tr><tr height=1%><td>
+
+		   
+		<table width="100%" height=100% border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr height=19>
+		    <td width=1></td>
+            <td width=12 background=/images/l_menu.gif bgcolor="#339933"><img src=/images/l_menu.gif width=12 height=19></td>
+            <td background="/images/s_menu.gif" align=center width=100%  bgcolor="#88ff88" class=menu_title
+			  			
+			>ЗАДАЧНИК</td>
+            <td width=12 background=/images/r_menu.gif bgcolor="#339933"><img src=/images/r_menu.gif width=12 height=19></td>
+		    <td width=1></td>
+          </tr>
+          <tr valign="top" height=100% bgcolor="#f0fff0">
+		    <td></td>
+            <td colspan="3" background=/images/notepad.gif style="BORDER-BOTTOM: #306E18 1px dashed;  BORDER-left: #306E18 1px dashed;BORDER-right: #306E18 1px dashed; padding: 3" height=100%>
+<img src=/images/circle.gif width=10 height=10> <a href=/?main=tasks>Архив задач</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/?main=status >Состояние системы</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=120>Работа в системе</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/?main=rating>Рейтинг</a><br>
+
+		   </td><td></td></tr><tr height=2><td colspan=5></td></tr></table>
+
+	    </tr><tr height=1%><td>
+
+		   
+		<table width="100%" height=100% border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr height=19>
+		    <td width=1></td>
+            <td width=12 background=/images/l_menu.gif bgcolor="#339933"><img src=/images/l_menu.gif width=12 height=19></td>
+            <td background="/images/s_menu.gif" align=center width=100%  bgcolor="#88ff88" class=menu_title
+			  			
+			>МЕТОДИЧКА</td>
+            <td width=12 background=/images/r_menu.gif bgcolor="#339933"><img src=/images/r_menu.gif width=12 height=19></td>
+		    <td width=1></td>
+          </tr>
+          <tr valign="top" height=100% bgcolor="#f0fff0">
+		    <td></td>
+            <td colspan="3" background=/images/notepad.gif style="BORDER-BOTTOM: #306E18 1px dashed;  BORDER-left: #306E18 1px dashed;BORDER-right: #306E18 1px dashed; padding: 3" height=100%>
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=118>Новичкам</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=195>Алгоритмы</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=196>Курсы КДПиШ</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=513>Курс олимпиадника</a><br> 
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=845>Дистрибутивы</a><br> 
+
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=2>Ссылки</a><br>
+           </td><td></td></tr><tr height=2><td colspan=5></td></tr></table>
+
+	    </tr><tr height=100%><td>
+
+		   
+		<table width="100%" height=100% border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr height=19>
+		    <td width=1></td>
+            <td width=12 background=/images/l_menu.gif bgcolor="#339933"><img src=/images/l_menu.gif width=12 height=19></td>
+            <td background="/images/s_menu.gif" align=center width=100%  bgcolor="#88ff88" class=menu_title
+			  			
+			>СТАТИСТИКА</td>
+            <td width=12 background=/images/r_menu.gif bgcolor="#339933"><img src=/images/r_menu.gif width=12 height=19></td>
+		    <td width=1></td>
+          </tr>
+          <tr valign="top" height=100% bgcolor="#f0fff0">
+		    <td></td>
+            <td colspan="3" background=/images/notepad.gif style="BORDER-BOTTOM: #306E18 1px dashed;  BORDER-left: #306E18 1px dashed;BORDER-right: #306E18 1px dashed; padding: 3" height=100%>
+		   <br>
+
+<center>
+<a style="display: block; margin-top: 0.5em;" href="http://www.yandex.ru?add=34316&from=promocode" target=_blank><img src="http://img.yandex.net/i/service/wdgt/yand-add-b.png" border="0" alt="добавить на Яндекс" /></a>
+<script async type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script> <div class="yashare-auto-init" data-yashareType="button" data-yashareQuickServices="no"></div> 
+</center>
+<br>
+
+<table align=center>
+  <td><img src="http://hit23.hotlog.ru/cgi-bin/hotlog/count?s=426099&im=700" width="88" height="31" alt="HotLog" onclick="window.open('http://hotlog.ru/viewstat?id=426099&bs_day=23&bs_month=2&bs_year=2014&es_day=25&es_month=3&es_year=2014&basic_hits=1&basic_hosts=1&section=daily')" style="cursor:hand"></td>
+  <td><img src="//counter.yadro.ru/logo?11.15" title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" alt="" border="0" width="88" height="31"  onclick="window.open('http://www.liveinternet.ru/stat/acmp.ru/')" style="cursor:hand"/></td>
+</tr>
+
+<tr>
+  <td colspan=2 align=center><br><img alt="GISMETEO.RU: погода в г. Красноярск" src="http://informer.gismeteo.ru/29574-9.GIF" border=0 width=120 height=60 onclick="window.open('http://www.gismeteo.ru/towns/29574.htm')" style="cursor:hand"></td>
+</tr></table>
+
+<br>
+<center>
+
+
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-8694399840838901"
+     data-ad-slot="1596885095"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br>&nbsp;
+</center>
+           </td><td></td></tr><tr height=2><td colspan=5></td></tr></table>
+
+		</td></tr>
+ 	    </table></td>
+      
+	  <td valign=top>  	
+
+		<table width="100%" height=100% border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr height=19>
+		    <td width=1></td>
+            <td width=12 background=/images/l_menu.gif bgcolor="#339933"><img src=/images/l_menu.gif width=12 height=19></td>
+            <td background="/images/s_menu.gif" align=center width=100%  bgcolor="#88ff88" class=menu_title
+			  			
+			>АРЫСТАН КАЛИМОВ</td>
+            <td width=12 background=/images/r_menu.gif bgcolor="#339933"><img src=/images/r_menu.gif width=12 height=19></td>
+		    <td width=1></td>
+          </tr>
+          <tr valign="top" height=100% bgcolor="#f0fff0">
+		    <td></td>
+            <td colspan="3" background=/images/notepad2.gif style="BORDER-BOTTOM: #306E18 1px dashed;  BORDER-left: #306E18 1px dashed;BORDER-right: #306E18 1px dashed; padding: 3" height=100%>
+<table width=100%><tr><td valign=top>
+<h4>Общая статистика</h4>
+<b class=btext>Место: 286 / 37297</b><br><br>
+<b class=btext>Рейтинг: 10974 / 24555</b><br><br>
+
+
+<b class=btext>Решенные задачи (337):</b>
+<p class=text>
+<a href=?main=task&id_task=1>1</a> <a href=?main=task&id_task=2>2</a> <a href=?main=task&id_task=3>3</a> <a href=?main=task&id_task=4>4</a> <a href=?main=task&id_task=5>5</a> <a href=?main=task&id_task=6>6</a> <a href=?main=task&id_task=7>7</a> <a href=?main=task&id_task=8>8</a> <a href=?main=task&id_task=9>9</a> <a href=?main=task&id_task=10>10</a> <a href=?main=task&id_task=11>11</a> <a href=?main=task&id_task=12>12</a> <a href=?main=task&id_task=13>13</a> <a href=?main=task&id_task=14>14</a> <a href=?main=task&id_task=15>15</a> <a href=?main=task&id_task=16>16</a> <a href=?main=task&id_task=17>17</a> <a href=?main=task&id_task=18>18</a> <a href=?main=task&id_task=19>19</a> <a href=?main=task&id_task=20>20</a> <a href=?main=task&id_task=21>21</a> <a href=?main=task&id_task=22>22</a> <a href=?main=task&id_task=23>23</a> <a href=?main=task&id_task=24>24</a> <a href=?main=task&id_task=25>25</a> <a href=?main=task&id_task=26>26</a> <a href=?main=task&id_task=27>27</a> <a href=?main=task&id_task=28>28</a> <a href=?main=task&id_task=29>29</a> <a href=?main=task&id_task=30>30</a> <a href=?main=task&id_task=31>31</a> <a href=?main=task&id_task=32>32</a> <a href=?main=task&id_task=33>33</a> <a href=?main=task&id_task=35>35</a> <a href=?main=task&id_task=36>36</a> <a href=?main=task&id_task=37>37</a> <a href=?main=task&id_task=39>39</a> <a href=?main=task&id_task=40>40</a> <a href=?main=task&id_task=41>41</a> <a href=?main=task&id_task=42>42</a> <a href=?main=task&id_task=43>43</a> <a href=?main=task&id_task=44>44</a> <a href=?main=task&id_task=45>45</a> <a href=?main=task&id_task=46>46</a> <a href=?main=task&id_task=47>47</a> <a href=?main=task&id_task=48>48</a> <a href=?main=task&id_task=50>50</a> <a href=?main=task&id_task=51>51</a> <a href=?main=task&id_task=52>52</a> <a href=?main=task&id_task=53>53</a> <a href=?main=task&id_task=55>55</a> <a href=?main=task&id_task=56>56</a> <a href=?main=task&id_task=57>57</a> <a href=?main=task&id_task=58>58</a> <a href=?main=task&id_task=59>59</a> <a href=?main=task&id_task=60>60</a> <a href=?main=task&id_task=61>61</a> <a href=?main=task&id_task=62>62</a> <a href=?main=task&id_task=63>63</a> <a href=?main=task&id_task=64>64</a> <a href=?main=task&id_task=66>66</a> <a href=?main=task&id_task=68>68</a> <a href=?main=task&id_task=69>69</a> <a href=?main=task&id_task=70>70</a> <a href=?main=task&id_task=71>71</a> <a href=?main=task&id_task=72>72</a> <a href=?main=task&id_task=75>75</a> <a href=?main=task&id_task=78>78</a> <a href=?main=task&id_task=79>79</a> <a href=?main=task&id_task=80>80</a> <a href=?main=task&id_task=81>81</a> <a href=?main=task&id_task=82>82</a> <a href=?main=task&id_task=84>84</a> <a href=?main=task&id_task=85>85</a> <a href=?main=task&id_task=86>86</a> <a href=?main=task&id_task=87>87</a> <a href=?main=task&id_task=88>88</a> <a href=?main=task&id_task=89>89</a> <a href=?main=task&id_task=91>91</a> <a href=?main=task&id_task=92>92</a> <a href=?main=task&id_task=93>93</a> <a href=?main=task&id_task=94>94</a> <a href=?main=task&id_task=95>95</a> <a href=?main=task&id_task=98>98</a> <a href=?main=task&id_task=102>102</a> <a href=?main=task&id_task=103>103</a> <a href=?main=task&id_task=106>106</a> <a href=?main=task&id_task=108>108</a> <a href=?main=task&id_task=113>113</a> <a href=?main=task&id_task=114>114</a> <a href=?main=task&id_task=118>118</a> <a href=?main=task&id_task=119>119</a> <a href=?main=task&id_task=120>120</a> <a href=?main=task&id_task=121>121</a> <a href=?main=task&id_task=122>122</a> <a href=?main=task&id_task=123>123</a> <a href=?main=task&id_task=124>124</a> <a href=?main=task&id_task=125>125</a> <a href=?main=task&id_task=126>126</a> <a href=?main=task&id_task=127>127</a> <a href=?main=task&id_task=128>128</a> <a href=?main=task&id_task=129>129</a> <a href=?main=task&id_task=130>130</a> <a href=?main=task&id_task=131>131</a> <a href=?main=task&id_task=132>132</a> <a href=?main=task&id_task=133>133</a> <a href=?main=task&id_task=135>135</a> <a href=?main=task&id_task=136>136</a> <a href=?main=task&id_task=137>137</a> <a href=?main=task&id_task=138>138</a> <a href=?main=task&id_task=140>140</a> <a href=?main=task&id_task=141>141</a> <a href=?main=task&id_task=142>142</a> <a href=?main=task&id_task=143>143</a> <a href=?main=task&id_task=144>144</a> <a href=?main=task&id_task=145>145</a> <a href=?main=task&id_task=146>146</a> <a href=?main=task&id_task=147>147</a> <a href=?main=task&id_task=148>148</a> <a href=?main=task&id_task=149>149</a> <a href=?main=task&id_task=150>150</a> <a href=?main=task&id_task=151>151</a> <a href=?main=task&id_task=156>156</a> <a href=?main=task&id_task=159>159</a> <a href=?main=task&id_task=162>162</a> <a href=?main=task&id_task=163>163</a> <a href=?main=task&id_task=164>164</a> <a href=?main=task&id_task=165>165</a> <a href=?main=task&id_task=166>166</a> <a href=?main=task&id_task=167>167</a> <a href=?main=task&id_task=168>168</a> <a href=?main=task&id_task=169>169</a> <a href=?main=task&id_task=170>170</a> <a href=?main=task&id_task=171>171</a> <a href=?main=task&id_task=172>172</a> <a href=?main=task&id_task=173>173</a> <a href=?main=task&id_task=174>174</a> <a href=?main=task&id_task=178>178</a> <a href=?main=task&id_task=179>179</a> <a href=?main=task&id_task=182>182</a> <a href=?main=task&id_task=183>183</a> <a href=?main=task&id_task=185>185</a> <a href=?main=task&id_task=189>189</a> <a href=?main=task&id_task=192>192</a> <a href=?main=task&id_task=193>193</a> <a href=?main=task&id_task=194>194</a> <a href=?main=task&id_task=195>195</a> <a href=?main=task&id_task=196>196</a> <a href=?main=task&id_task=198>198</a> <a href=?main=task&id_task=202>202</a> <a href=?main=task&id_task=203>203</a> <a href=?main=task&id_task=204>204</a> <a href=?main=task&id_task=207>207</a> <a href=?main=task&id_task=208>208</a> <a href=?main=task&id_task=209>209</a> <a href=?main=task&id_task=214>214</a> <a href=?main=task&id_task=224>224</a> <a href=?main=task&id_task=225>225</a> <a href=?main=task&id_task=231>231</a> <a href=?main=task&id_task=233>233</a> <a href=?main=task&id_task=234>234</a> <a href=?main=task&id_task=237>237</a> <a href=?main=task&id_task=249>249</a> <a href=?main=task&id_task=250>250</a> <a href=?main=task&id_task=253>253</a> <a href=?main=task&id_task=254>254</a> <a href=?main=task&id_task=255>255</a> <a href=?main=task&id_task=262>262</a> <a href=?main=task&id_task=263>263</a> <a href=?main=task&id_task=264>264</a> <a href=?main=task&id_task=265>265</a> <a href=?main=task&id_task=267>267</a> <a href=?main=task&id_task=270>270</a> <a href=?main=task&id_task=271>271</a> <a href=?main=task&id_task=272>272</a> <a href=?main=task&id_task=273>273</a> <a href=?main=task&id_task=274>274</a> <a href=?main=task&id_task=275>275</a> <a href=?main=task&id_task=276>276</a> <a href=?main=task&id_task=277>277</a> <a href=?main=task&id_task=278>278</a> <a href=?main=task&id_task=279>279</a> <a href=?main=task&id_task=280>280</a> <a href=?main=task&id_task=283>283</a> <a href=?main=task&id_task=284>284</a> <a href=?main=task&id_task=285>285</a> <a href=?main=task&id_task=286>286</a> <a href=?main=task&id_task=289>289</a> <a href=?main=task&id_task=291>291</a> <a href=?main=task&id_task=292>292</a> <a href=?main=task&id_task=293>293</a> <a href=?main=task&id_task=294>294</a> <a href=?main=task&id_task=296>296</a> <a href=?main=task&id_task=297>297</a> <a href=?main=task&id_task=298>298</a> <a href=?main=task&id_task=303>303</a> <a href=?main=task&id_task=309>309</a> <a href=?main=task&id_task=311>311</a> <a href=?main=task&id_task=312>312</a> <a href=?main=task&id_task=313>313</a> <a href=?main=task&id_task=314>314</a> <a href=?main=task&id_task=315>315</a> <a href=?main=task&id_task=316>316</a> <a href=?main=task&id_task=317>317</a> <a href=?main=task&id_task=318>318</a> <a href=?main=task&id_task=319>319</a> <a href=?main=task&id_task=320>320</a> <a href=?main=task&id_task=321>321</a> <a href=?main=task&id_task=322>322</a> <a href=?main=task&id_task=323>323</a> <a href=?main=task&id_task=324>324</a> <a href=?main=task&id_task=325>325</a> <a href=?main=task&id_task=326>326</a> <a href=?main=task&id_task=327>327</a> <a href=?main=task&id_task=328>328</a> <a href=?main=task&id_task=329>329</a> <a href=?main=task&id_task=331>331</a> <a href=?main=task&id_task=332>332</a> <a href=?main=task&id_task=333>333</a> <a href=?main=task&id_task=335>335</a> <a href=?main=task&id_task=336>336</a> <a href=?main=task&id_task=337>337</a> <a href=?main=task&id_task=338>338</a> <a href=?main=task&id_task=339>339</a> <a href=?main=task&id_task=340>340</a> <a href=?main=task&id_task=344>344</a> <a href=?main=task&id_task=348>348</a> <a href=?main=task&id_task=349>349</a> <a href=?main=task&id_task=350>350</a> <a href=?main=task&id_task=352>352</a> <a href=?main=task&id_task=353>353</a> <a href=?main=task&id_task=354>354</a> <a href=?main=task&id_task=355>355</a> <a href=?main=task&id_task=357>357</a> <a href=?main=task&id_task=360>360</a> <a href=?main=task&id_task=361>361</a> <a href=?main=task&id_task=362>362</a> <a href=?main=task&id_task=363>363</a> <a href=?main=task&id_task=364>364</a> <a href=?main=task&id_task=365>365</a> <a href=?main=task&id_task=367>367</a> <a href=?main=task&id_task=368>368</a> <a href=?main=task&id_task=370>370</a> <a href=?main=task&id_task=371>371</a> <a href=?main=task&id_task=377>377</a> <a href=?main=task&id_task=380>380</a> <a href=?main=task&id_task=382>382</a> <a href=?main=task&id_task=383>383</a> <a href=?main=task&id_task=384>384</a> <a href=?main=task&id_task=385>385</a> <a href=?main=task&id_task=387>387</a> <a href=?main=task&id_task=388>388</a> <a href=?main=task&id_task=390>390</a> <a href=?main=task&id_task=392>392</a> <a href=?main=task&id_task=394>394</a> <a href=?main=task&id_task=395>395</a> <a href=?main=task&id_task=398>398</a> <a href=?main=task&id_task=401>401</a> <a href=?main=task&id_task=408>408</a> <a href=?main=task&id_task=409>409</a> <a href=?main=task&id_task=411>411</a> <a href=?main=task&id_task=412>412</a> <a href=?main=task&id_task=413>413</a> <a href=?main=task&id_task=416>416</a> <a href=?main=task&id_task=418>418</a> <a href=?main=task&id_task=419>419</a> <a href=?main=task&id_task=422>422</a> <a href=?main=task&id_task=431>431</a> <a href=?main=task&id_task=432>432</a> <a href=?main=task&id_task=439>439</a> <a href=?main=task&id_task=440>440</a> <a href=?main=task&id_task=445>445</a> <a href=?main=task&id_task=446>446</a> <a href=?main=task&id_task=447>447</a> <a href=?main=task&id_task=449>449</a> <a href=?main=task&id_task=454>454</a> <a href=?main=task&id_task=456>456</a> <a href=?main=task&id_task=457>457</a> <a href=?main=task&id_task=461>461</a> <a href=?main=task&id_task=462>462</a> <a href=?main=task&id_task=465>465</a> <a href=?main=task&id_task=469>469</a> <a href=?main=task&id_task=471>471</a> <a href=?main=task&id_task=472>472</a> <a href=?main=task&id_task=475>475</a> <a href=?main=task&id_task=476>476</a> <a href=?main=task&id_task=477>477</a> <a href=?main=task&id_task=481>481</a> <a href=?main=task&id_task=482>482</a> <a href=?main=task&id_task=485>485</a> <a href=?main=task&id_task=490>490</a> <a href=?main=task&id_task=491>491</a> <a href=?main=task&id_task=493>493</a> <a href=?main=task&id_task=496>496</a> <a href=?main=task&id_task=498>498</a> <a href=?main=task&id_task=499>499</a> <a href=?main=task&id_task=500>500</a> <a href=?main=task&id_task=501>501</a> <a href=?main=task&id_task=504>504</a> <a href=?main=task&id_task=505>505</a> <a href=?main=task&id_task=510>510</a> <a href=?main=task&id_task=511>511</a> <a href=?main=task&id_task=513>513</a> <a href=?main=task&id_task=514>514</a> <a href=?main=task&id_task=515>515</a> <a href=?main=task&id_task=516>516</a> <a href=?main=task&id_task=518>518</a> <a href=?main=task&id_task=519>519</a> <a href=?main=task&id_task=521>521</a> <a href=?main=task&id_task=522>522</a> <a href=?main=task&id_task=524>524</a> <a href=?main=task&id_task=526>526</a> <a href=?main=task&id_task=527>527</a> <a href=?main=task&id_task=529>529</a> <a href=?main=task&id_task=530>530</a> <a href=?main=task&id_task=534>534</a> <a href=?main=task&id_task=539>539</a> <a href=?main=task&id_task=541>541</a> <a href=?main=task&id_task=542>542</a> <a href=?main=task&id_task=543>543</a> <a href=?main=task&id_task=544>544</a> <a href=?main=task&id_task=548>548</a> <a href=?main=task&id_task=550>550</a> <a href=?main=task&id_task=551>551</a> <a href=?main=task&id_task=554>554</a> <a href=?main=task&id_task=557>557</a> <a href=?main=task&id_task=564>564</a> <a href=?main=task&id_task=574>574</a> <a href=?main=task&id_task=576>576</a> <a href=?main=task&id_task=577>577</a> <a href=?main=task&id_task=579>579</a> <a href=?main=task&id_task=580>580</a> <a href=?main=task&id_task=581>581</a> <a href=?main=task&id_task=585>585</a> <a href=?main=task&id_task=596>596</a> <a href=?main=task&id_task=597>597</a> <a href=?main=task&id_task=600>600</a> 
+</p>
+
+
+<b class=btext>Нерешенные задачи (18):</b>
+<p class=text><a href=?main=task&id_task=246>246</a> <a href=?main=task&id_task=295>295</a> <a href=?main=task&id_task=299>299</a> <a href=?main=task&id_task=330>330</a> <a href=?main=task&id_task=375>375</a> <a href=?main=task&id_task=396>396</a> <a href=?main=task&id_task=397>397</a> <a href=?main=task&id_task=399>399</a> <a href=?main=task&id_task=415>415</a> <a href=?main=task&id_task=435>435</a> <a href=?main=task&id_task=438>438</a> <a href=?main=task&id_task=442>442</a> <a href=?main=task&id_task=453>453</a> <a href=?main=task&id_task=464>464</a> <a href=?main=task&id_task=492>492</a> <a href=?main=task&id_task=520>520</a> <a href=?main=task&id_task=545>545</a> <a href=?main=task&id_task=566>566</a> </p>
+
+</td><td width=300 valign=top>
+<table class=main cellpadding=2 cellspacing=1>
+<tr><th>Результат</th><th>Всего</th></tr>
+<tr class=white2>
+  <td><font class=green>Accepted</font></td>
+  <td align=right>553</td>
+</tr>
+<tr class=white2>
+  <td><font class=red>Wrong answer</font></td>
+  <td align=right>762</td>
+</tr>
+<tr class=white2>
+  <td><font class=red>Time limit exceeded</font></td>
+  <td align=right>289</td>
+</tr>
+<tr class=white2>
+  <td><font class=red>Presentation Error</font></td>
+  <td align=right>26</td>
+</td>
+</tr>
+<tr class=white2>
+  <td><font class=red>Compilation error</font></td>
+  <td align=right>182</td>
+</tr>
+<tr class=white2>
+  <td><font class=red>Memory limit exceeded</font></td>
+  <td align=right>24</td>
+</tr>
+<tr class=white2>
+  <td><font class=red>Runtime error</font></td>
+  <td align=right>9</td>
+</table>
+
+</td></tr></table>
+<br>
+<a href=index.asp?main=status&id_res=1&id_mem=38663>[успешные попытки]</a>
+<a href=index.asp?main=status&id_mem=38663>[все попытки]</a>
+
+</td><td></td></tr><tr height=2><td colspan=5></td></tr></table>	  </td>
+	  <td width=1>&nbsp;</td>
+	</tr></table>
+	</td></tr>
+	<tr height=8><td colspan=5 background=/images/line.gif></td></tr>
+  </table>
+<center>
+<p style="margin:3">
+  <i>Красноярский краевой Дворец пионеров и школьников, (c)2006 - 2014, ICQ:  &nbsp;<img src=http://web.icq.com/whitepages/online?icq=151483&img=26> 151483</i>
+</p>
+<br>
+<center>
+<font style="color: #999999; font-size: 10">
+<!–– google_ad_section_start(weight=ignore) ––>
+
+<br>
+<!--16185425356-->
+<!–– google_ad_section_end ––>		  
+</font>
+</center>
+
+<iframe src="/icq/icq_update.asp?noupdate=1" width=100 height=20 marginwidth=0 marginheight=0 frameborder=0 scrolling=no></iframe>
+
+</center>
+</body>
+</html>

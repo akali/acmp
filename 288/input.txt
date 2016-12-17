@@ -1,0 +1,5 @@
+// (*)
+{myfirstprogram}
+begin
+writeln('helloworld');
+end.

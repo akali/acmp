@@ -1,0 +1,26 @@
+8 
+Atabekov 3 
+CleStro 5 
+Begish 4 
+Ilyaz 10 
+Maddy 50 
+Tata 20 
+LMFAO 40 
+KattyPerry 33 
+15 6 
+Atabekov 
+CleStro 
+Begish 
+Atabekov 
+CleStro 
+KattyPerry 
+LMFAO 
+LMFAO 
+Maddy 
+Tata 
+Ilyaz 
+Begish 
+KattyPerry 
+Maddy 
+LMFAO 
+10 11 20 22 40 150 
