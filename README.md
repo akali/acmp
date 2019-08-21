@@ -1,2 +1,2 @@
 # acmp
-ACMP Solutions
+my acmp.ru problems solutions
